@@ -9,7 +9,7 @@ public class Calculator {
         if (y != 0) {
             return x / y;
         }
-        throw new RuntimeException("Делить на ноль нельзя");
+        return Integer.MAX_VALUE;
     };
     UnaryOperator<Integer> pow = x -> x * x;
     UnaryOperator<Integer> abs = x -> x > 0 ? x : x * -1;
